@@ -9,7 +9,7 @@ A complete production-ready observability stack demonstrating **Metrics, Logs, a
 ## Locust web interface of dummy request:
 <img width="1680" height="661" alt="image" src="https://github.com/user-attachments/assets/80fd04d0-f80c-4470-a1a4-bd7708bdd7e5" />
 
-## Grafana Reuest count graph and dashboard:
+## Grafana Request count graph and dashboard:
 <img width="1452" height="683" alt="image" src="https://github.com/user-attachments/assets/ee74f6ae-70b3-4062-b97f-ded700c17a14" />
 
 <img width="1046" height="725" alt="image" src="https://github.com/user-attachments/assets/f19b089c-0ecb-4863-a5b4-cc6ec97c33b4" />
@@ -20,9 +20,14 @@ A complete production-ready observability stack demonstrating **Metrics, Logs, a
 <img width="1913" height="912" alt="image" src="https://github.com/user-attachments/assets/49d00635-64fa-40b6-b649-6952f226a788" />
 
 ## Grafana logs via Loki:
+<img width="1643" height="928" alt="image" src="https://github.com/user-attachments/assets/e323dfa7-c74a-4841-bd6b-58af13cad565" />
+
+## Grafana Trace of login query via Tempo:
+<img width="1907" height="900" alt="image" src="https://github.com/user-attachments/assets/4a890f4d-4630-4ab3-8c78-7a8609fd19c9" />
 
 
-## Grafana Trace via Tempo:
+## Prometheus TSDB Status:
+<img width="1633" height="852" alt="image" src="https://github.com/user-attachments/assets/2a9c08ad-424e-4377-9190-5d9bcdbe08e8" />
 
 
 
