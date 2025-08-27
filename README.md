@@ -6,15 +6,27 @@ A complete production-ready observability stack demonstrating **Metrics, Logs, a
 
 > **Note**: Place your output images in the `/screenshots/` directory to showcase the results:
 
-```
-screenshots/
-├── grafana-dashboard-overview.png
-├── prometheus-metrics.png
-├── loki-logs-view.png
-├── tempo-traces.png
-├── correlated-view.png
-└── load-test-results.png
-```
+## Locust web interface of dummy request:
+<img width="1680" height="661" alt="image" src="https://github.com/user-attachments/assets/80fd04d0-f80c-4470-a1a4-bd7708bdd7e5" />
+
+## Grafana Reuest count graph and dashboard:
+<img width="1452" height="683" alt="image" src="https://github.com/user-attachments/assets/ee74f6ae-70b3-4062-b97f-ded700c17a14" />
+
+<img width="1046" height="725" alt="image" src="https://github.com/user-attachments/assets/f19b089c-0ecb-4863-a5b4-cc6ec97c33b4" />
+
+
+
+## Grafana Request Latency :
+<img width="1913" height="912" alt="image" src="https://github.com/user-attachments/assets/49d00635-64fa-40b6-b649-6952f226a788" />
+
+## Grafana logs via Loki:
+
+
+## Grafana Trace via Tempo:
+
+
+
+
 
 **Expected Results Preview:**
 - **Grafana Dashboard**: Real-time metrics, logs, and traces in unified view
