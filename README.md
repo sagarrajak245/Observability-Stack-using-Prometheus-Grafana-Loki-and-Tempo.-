@@ -25,6 +25,8 @@ A complete production-ready observability stack demonstrating **Metrics, Logs, a
 ## Grafana Trace of login query via Tempo:
 <img width="1907" height="900" alt="image" src="https://github.com/user-attachments/assets/4a890f4d-4630-4ab3-8c78-7a8609fd19c9" />
 
+## Prometheus graph:
+<img width="1919" height="954" alt="image" src="https://github.com/user-attachments/assets/f78bee69-133d-4114-b47d-e5312a4ac37e" />
 
 ## Prometheus TSDB Status:
 <img width="1493" height="949" alt="image" src="https://github.com/user-attachments/assets/45a81247-e17a-46a9-abb3-ec42d0e6db15" />
