@@ -126,11 +126,10 @@ locust -f locustfile.py --host=http://localhost:8000 --users 10 --spawn-rate 2
 │   ├── schemas.py               # 📝 Pydantic validation schemas
 │   ├── database.py              # 🔗 Database connection setup
 │   └── crud.py                  # 📊 Database operations
-├── config/
-│   ├── prometheus.yml           # ⚙️ Prometheus scraping config
-│   ├── promtail-config.yml      # ⚙️ Log shipping configuration
-│   ├── tempo-config.yaml        # ⚙️ Distributed tracing setup
-│   └── grafana-datasources.yml  # ⚙️ Grafana data source config
+│── prometheus.yml           # ⚙️ Prometheus scraping config
+│── promtail-config.yml      # ⚙️ Log shipping configuration
+│── tempo-config.yaml        # ⚙️ Distributed tracing setup
+│── grafana-datasources.yml  # ⚙️ Grafana data source config
 ├── docker-compose.yml           # 🐳 Complete stack orchestration
 ├── requirements.txt             # 📦 Python dependencies
 ├── locustfile.py               # 🚦 Load testing scenarios
