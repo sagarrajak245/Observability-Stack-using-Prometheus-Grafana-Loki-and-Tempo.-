@@ -97,7 +97,7 @@ docker-compose ps
 pip install locust
 
 # Start load testing (in separate terminal)
-locust -f locustfile.py --host=http://localhost:8000 --users 10 --spawn-rate 2
+locust -f locustfile.py --host http://localhost:8000
 ```
 
 ### 3. Access Dashboards
