@@ -27,7 +27,12 @@ A complete production-ready observability stack demonstrating **Metrics, Logs, a
 
 
 ## Prometheus TSDB Status:
-<img width="1633" height="852" alt="image" src="https://github.com/user-attachments/assets/2a9c08ad-424e-4377-9190-5d9bcdbe08e8" />
+<img width="1493" height="949" alt="image" src="https://github.com/user-attachments/assets/45a81247-e17a-46a9-abb3-ec42d0e6db15" />
+
+## Prometheus query stat:
+<img width="1466" height="922" alt="image" src="https://github.com/user-attachments/assets/cdf1b295-369d-49cc-9f3c-1d1b4f80c520" />
+
+
 
 
 
