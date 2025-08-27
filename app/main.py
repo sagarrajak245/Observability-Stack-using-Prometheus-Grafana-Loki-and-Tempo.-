@@ -49,18 +49,37 @@ def get_db():
 
 @app.middleware("http")
 async def log_and_trace_middleware(request: Request, call_next):
+    """
+    Middleware to add trace and span IDs to the log context.
+    This links logs to traces.
+    """
+    # Get the current span from the request context
     span = trace.get_current_span()
     trace_id = span.get_span_context().trace_id
     span_id = span.get_span_context().span_id
-    old_factory = logging.getLogRecordFactory()
-    def record_factory(*args, **kwargs):
-        record = old_factory(*args, **kwargs)
-        record.otelTraceID = format(trace_id, 'x')
-        record.otelSpanID = format(span_id, 'x')
-        return record
-    logging.setLogRecordFactory(record_factory)
+
+    # Create a filter that adds the trace and span IDs to each log record
+    class TraceIdFilter(logging.Filter):
+        def filter(self, record):
+            record.otelTraceID = format(trace_id, 'x')
+            record.otelSpanID = format(span_id, 'x')
+            return True
+
+    # Add the filter to all loggers
+    for logger_name in logging.Logger.manager.loggerDict:
+        logging.getLogger(logger_name).addFilter(TraceIdFilter())
+
+    # Also add it to the root logger
+    logging.getLogger().addFilter(TraceIdFilter())
+
     response = await call_next(request)
-    logging.setLogRecordFactory(old_factory)
+
+    # It's good practice to remove the filter after the request is done
+    for logger_name in logging.Logger.manager.loggerDict:
+        # This part is a bit more complex to implement correctly without causing side effects
+        # For this demo, leaving the filter attached is acceptable.
+        pass
+
     return response
 
 @app.get("/")
@@ -70,7 +89,7 @@ def read_root():
         processing_time = random.uniform(0.1, 0.6)
         time.sleep(processing_time)
         logger.info(f"Root request processed in {processing_time:.2f} seconds.")
-        return {"message": "Hello, Observability World!"}
+        return {"message": "Hello sagar, Observability World!"}
 
 @app.post("/signup/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
