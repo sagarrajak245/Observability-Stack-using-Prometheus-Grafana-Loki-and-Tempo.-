@@ -12,7 +12,8 @@ A complete production-ready observability stack demonstrating **Metrics, Logs, a
 ## Grafana Request count graph and dashboard:
 <img width="1452" height="683" alt="image" src="https://github.com/user-attachments/assets/ee74f6ae-70b3-4062-b97f-ded700c17a14" />
 
-<img width="1046" height="725" alt="image" src="https://github.com/user-attachments/assets/f19b089c-0ecb-4863-a5b4-cc6ec97c33b4" />
+<img width="1251" height="911" alt="image" src="https://github.com/user-attachments/assets/f3418ad2-ac7e-4376-8cf5-67e23c481288" />
+
 
 
 
