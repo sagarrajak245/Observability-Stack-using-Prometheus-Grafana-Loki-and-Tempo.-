@@ -4,7 +4,6 @@ A complete production-ready observability stack demonstrating **Metrics, Logs, a
 
 ## 📸 Screenshots & Results
 
-> **Note**: Place your output images in the `/screenshots/` directory to showcase the results:
 
 ## Locust web interface of dummy request:
 <img width="1680" height="661" alt="image" src="https://github.com/user-attachments/assets/80fd04d0-f80c-4470-a1a4-bd7708bdd7e5" />
