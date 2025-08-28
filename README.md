@@ -105,7 +105,7 @@ graph TB
 
 ### 1. Clone & Start Services
 ```bash
-git clone <your-repo>
+git clone https://github.com/sagarrajak245/Observability-Stack-using-Prometheus-Grafana-Loki-and-Tempo.-.git
 cd fastapi-observability-stack
 
 # Start the complete stack
